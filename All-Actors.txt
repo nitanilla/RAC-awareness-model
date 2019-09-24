@@ -1,0 +1,98 @@
+{
+  "actors": [
+    {
+      "id": "435bdaea-a98e-40a6-88fb-e42d94dc6304",
+      "text": "Monitor",
+      "type": "istar.Agent",
+      "x": 183,
+      "y": 60,
+      "nodes": [
+        {
+          "id": "3e2ac3ef-a19e-4b31-b830-9cbed9d16291",
+          "text": "SensorData",
+          "type": "istar.Resource",
+          "x": 233,
+          "y": 135
+        }
+      ]
+    },
+    {
+      "id": "e1264ae7-4cce-40b9-8939-65b4f29584ec",
+      "text": "Analizador",
+      "type": "istar.Agent",
+      "x": 680,
+      "y": 48,
+      "nodes": []
+    },
+    {
+      "id": "65e6338b-1e81-482f-ab9a-fac4085d392a",
+      "text": "Executor",
+      "type": "istar.Agent",
+      "x": 163,
+      "y": 275,
+      "nodes": []
+    },
+    {
+      "id": "f9a65889-9396-4e4e-9d1d-c1ad170034b1",
+      "text": "Planejador",
+      "type": "istar.Agent",
+      "x": 611,
+      "y": 274,
+      "nodes": []
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "3b3a1d86-8f74-4c53-8b20-9d26b24e9925",
+      "text": "IDArduino",
+      "type": "istar.Resource",
+      "x": 411,
+      "y": 20,
+      "source": "e1264ae7-4cce-40b9-8939-65b4f29584ec",
+      "target": "435bdaea-a98e-40a6-88fb-e42d94dc6304"
+    },
+    {
+      "id": "01d1142a-5ef0-4e88-9e18-75c6defd1596",
+      "text": "AcquireDatabySensors",
+      "type": "istar.Task",
+      "x": 458,
+      "y": 160,
+      "source": "e1264ae7-4cce-40b9-8939-65b4f29584ec",
+      "target": "3e2ac3ef-a19e-4b31-b830-9cbed9d16291"
+    }
+  ],
+  "links": [
+    {
+      "id": "ecab0031-0d49-497a-ae7a-5beffdc360ae",
+      "type": "istar.DependencyLink",
+      "source": "e1264ae7-4cce-40b9-8939-65b4f29584ec",
+      "target": "3b3a1d86-8f74-4c53-8b20-9d26b24e9925"
+    },
+    {
+      "id": "c85b4292-c79d-4515-a9d6-a8c4c9360e4a",
+      "type": "istar.DependencyLink",
+      "source": "3b3a1d86-8f74-4c53-8b20-9d26b24e9925",
+      "target": "435bdaea-a98e-40a6-88fb-e42d94dc6304"
+    },
+    {
+      "id": "ee7b7331-2f31-4a9d-9a19-4c65cce9d501",
+      "type": "istar.DependencyLink",
+      "source": "e1264ae7-4cce-40b9-8939-65b4f29584ec",
+      "target": "01d1142a-5ef0-4e88-9e18-75c6defd1596"
+    },
+    {
+      "id": "fdf26a77-840d-4e63-b3c8-f32e2eaa00de",
+      "type": "istar.DependencyLink",
+      "source": "01d1142a-5ef0-4e88-9e18-75c6defd1596",
+      "target": "3e2ac3ef-a19e-4b31-b830-9cbed9d16291"
+    }
+  ],
+  "display": {},
+  "tool": "pistar.1.2.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 24 Sep 2019 21:24:28 GMT",
+  "diagram": {
+    "width": 1700,
+    "height": 1300
+  }
+}

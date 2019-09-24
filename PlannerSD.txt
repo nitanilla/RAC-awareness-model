@@ -1,0 +1,51 @@
+{
+  "actors": [
+    {
+      "id": "3589ee55-603d-41ee-8bf1-2b2a54498def",
+      "text": "Planner-Raspberry",
+      "type": "istar.Actor",
+      "x": 119,
+      "y": 49,
+      "nodes": [
+        {
+          "id": "e159ce92-b29d-4fdc-a533-ee1e904f9f57",
+          "text": "Norms-Awareness",
+          "type": "istar.Quality",
+          "x": 190,
+          "y": 65
+        },
+        {
+          "id": "a0aa5491-9424-443a-b61e-3d7b65417c41",
+          "text": "Alternatives-Awareness",
+          "type": "istar.Quality",
+          "x": 282,
+          "y": 111
+        },
+        {
+          "id": "d905c860-c747-4eb3-a075-b3b232981c66",
+          "text": "Goal-Awareness",
+          "type": "istar.Quality",
+          "x": 244,
+          "y": 182
+        },
+        {
+          "id": "e1bf9c55-cb97-4745-b897-b19d8aa3b14a",
+          "text": "User-Awareness",
+          "type": "istar.Quality",
+          "x": 145,
+          "y": 159
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [],
+  "display": {},
+  "tool": "pistar.1.2.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 24 Sep 2019 20:36:49 GMT",
+  "diagram": {
+    "width": 1700,
+    "height": 1300
+  }
+}

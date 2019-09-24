@@ -1,0 +1,396 @@
+{
+  "actors": [
+    {
+      "id": "3589ee55-603d-41ee-8bf1-2b2a54498def",
+      "text": "Monitor-Arduino",
+      "type": "istar.Actor",
+      "x": 20,
+      "y": 29,
+      "nodes": [
+        {
+          "id": "c371f15c-bd52-4b0a-9636-2b22fa05d722",
+          "text": "Local-Awareness",
+          "type": "istar.Quality",
+          "x": 165,
+          "y": 44
+        },
+        {
+          "id": "e93e7805-2feb-4372-a020-8b89b999269e",
+          "text": "Functional-Awareness",
+          "type": "istar.Quality",
+          "x": 160,
+          "y": 187
+        },
+        {
+          "id": "f1b7b2b1-ad98-4016-a9b8-9cc86403e98d",
+          "text": "TimeClock-Arareness",
+          "type": "istar.Quality",
+          "x": 62,
+          "y": 116
+        },
+        {
+          "id": "db26a903-8f15-48f7-9435-c7f46393b5c9",
+          "text": "PhysicalEnvironment-Awareness",
+          "type": "istar.Quality",
+          "x": 298,
+          "y": 84
+        },
+        {
+          "id": "112f8890-a411-41e3-a6f0-f992a5a6e2e0",
+          "text": "AcquireHUM",
+          "type": "istar.Task",
+          "x": 300,
+          "y": 227
+        },
+        {
+          "id": "6717a81c-dd72-41c1-b040-2cc2b8d94439",
+          "text": "AcquireRAD",
+          "type": "istar.Task",
+          "x": 308,
+          "y": 153
+        },
+        {
+          "id": "2db32deb-02a4-4f33-91c4-3c1e0a572147",
+          "text": "AcquireTEMP",
+          "type": "istar.Task",
+          "x": 305,
+          "y": 282
+        },
+        {
+          "id": "a5a4a871-596a-4858-ade7-18dc0ff765d1",
+          "text": "InternalClock-Arduino",
+          "type": "istar.Resource",
+          "x": 56,
+          "y": 185
+        },
+        {
+          "id": "c2009203-c19d-455f-9b0f-5df10d1b25c7",
+          "text": "IDArduino",
+          "type": "istar.Resource",
+          "x": 164,
+          "y": 122
+        },
+        {
+          "id": "96d2e2c4-cc54-46cb-8fca-a6667e21ab02",
+          "text": "RADData",
+          "type": "istar.Resource",
+          "x": 140,
+          "y": 251
+        },
+        {
+          "id": "462bb4dd-37ee-45a0-8fcc-1b1a9e0b3bf3",
+          "text": "DataBeAggregated",
+          "type": "istar.Goal",
+          "x": 24,
+          "y": 261
+        },
+        {
+          "id": "329fed73-840d-43ce-9aef-c43c1ec9ff1b",
+          "text": "AgreggateData",
+          "type": "istar.Task",
+          "x": 139,
+          "y": 352
+        },
+        {
+          "id": "235c6edd-2851-475f-adb5-d577c4f47bd5",
+          "text": "HUMDAta",
+          "type": "istar.Resource",
+          "x": 205,
+          "y": 297
+        },
+        {
+          "id": "a024d6f2-9b7d-49a8-8c86-8a03830343e4",
+          "text": "TEMPData",
+          "type": "istar.Resource",
+          "x": 274,
+          "y": 350
+        },
+        {
+          "id": "ebea7307-7860-4fb3-9cf6-377186e2fed8",
+          "text": "SensorData",
+          "type": "istar.Resource",
+          "x": 20,
+          "y": 311
+        }
+      ]
+    },
+    {
+      "id": "6199696e-44bc-4b14-b39c-22f1b8c8ebaf",
+      "text": "Monitor-Raspberry",
+      "type": "istar.Actor",
+      "x": 156,
+      "y": 445,
+      "nodes": [
+        {
+          "id": "52f0313b-c762-44cd-9888-b0435b3c5fa7",
+          "text": "Local-Awareness",
+          "type": "istar.Quality",
+          "x": 222,
+          "y": 499
+        },
+        {
+          "id": "a29dbc50-c7b3-44ef-a8f2-673304a4885c",
+          "text": "IPRaspberry",
+          "type": "istar.Resource",
+          "x": 223,
+          "y": 562
+        }
+      ]
+    },
+    {
+      "id": "84c4f7d9-24e0-4440-b8e7-da55a0869ccf",
+      "text": "Monitor-SensorHUM",
+      "type": "istar.Actor",
+      "x": 640,
+      "y": 32,
+      "nodes": []
+    },
+    {
+      "id": "a7db6389-d3d7-4e7d-9f8e-25645182719f",
+      "text": "Monitor-SensorRAD",
+      "type": "istar.Actor",
+      "x": 544,
+      "y": 192,
+      "nodes": []
+    },
+    {
+      "id": "7f3c2075-ae76-4491-a9dd-a696eadd131c",
+      "text": "Monitor-SensorTEMP",
+      "type": "istar.Actor",
+      "x": 861,
+      "y": 287,
+      "nodes": []
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "7771e20d-0951-440b-9c83-48e867011f06",
+      "text": "RADValue",
+      "type": "istar.Resource",
+      "x": 412,
+      "y": 252,
+      "source": "6717a81c-dd72-41c1-b040-2cc2b8d94439",
+      "target": "a7db6389-d3d7-4e7d-9f8e-25645182719f"
+    },
+    {
+      "id": "650e2476-6045-40d9-a27f-62e286c3bca1",
+      "text": "HUMValue",
+      "type": "istar.Resource",
+      "x": 459,
+      "y": 332,
+      "source": "112f8890-a411-41e3-a6f0-f992a5a6e2e0",
+      "target": "84c4f7d9-24e0-4440-b8e7-da55a0869ccf"
+    },
+    {
+      "id": "23fee1e5-01d2-40d6-bcf6-92a792878311",
+      "text": "TEMPValue",
+      "type": "istar.Resource",
+      "x": 423,
+      "y": 397,
+      "source": "2db32deb-02a4-4f33-91c4-3c1e0a572147",
+      "target": "7f3c2075-ae76-4491-a9dd-a696eadd131c"
+    },
+    {
+      "id": "da1442af-2cd9-4649-a331-ba30aee12d7c",
+      "text": "RadiationBeMeasured",
+      "type": "istar.Goal",
+      "x": 426,
+      "y": 143,
+      "source": "db26a903-8f15-48f7-9435-c7f46393b5c9",
+      "target": "a7db6389-d3d7-4e7d-9f8e-25645182719f"
+    },
+    {
+      "id": "dd3a5341-3879-4457-80ca-46aeea22ee3b",
+      "text": "TemperatureBeMeasured",
+      "type": "istar.Goal",
+      "x": 534,
+      "y": 95,
+      "source": "db26a903-8f15-48f7-9435-c7f46393b5c9",
+      "target": "7f3c2075-ae76-4491-a9dd-a696eadd131c"
+    },
+    {
+      "id": "32b6f2d5-7837-450f-b347-73c137780d3b",
+      "text": "HumidityBeMeasured",
+      "type": "istar.Goal",
+      "x": 404,
+      "y": 34,
+      "source": "db26a903-8f15-48f7-9435-c7f46393b5c9",
+      "target": "84c4f7d9-24e0-4440-b8e7-da55a0869ccf"
+    }
+  ],
+  "links": [
+    {
+      "id": "e0835549-1a5c-4b0b-97e5-25fb70178565",
+      "type": "istar.DependencyLink",
+      "source": "6717a81c-dd72-41c1-b040-2cc2b8d94439",
+      "target": "7771e20d-0951-440b-9c83-48e867011f06"
+    },
+    {
+      "id": "a08b1c46-9948-408f-9be3-6de40950aa49",
+      "type": "istar.DependencyLink",
+      "source": "7771e20d-0951-440b-9c83-48e867011f06",
+      "target": "a7db6389-d3d7-4e7d-9f8e-25645182719f"
+    },
+    {
+      "id": "afc0a050-cd01-451f-b552-94d248789766",
+      "type": "istar.DependencyLink",
+      "source": "112f8890-a411-41e3-a6f0-f992a5a6e2e0",
+      "target": "650e2476-6045-40d9-a27f-62e286c3bca1"
+    },
+    {
+      "id": "6355892a-0a96-4a77-9c00-f07e71c6a97a",
+      "type": "istar.DependencyLink",
+      "source": "650e2476-6045-40d9-a27f-62e286c3bca1",
+      "target": "84c4f7d9-24e0-4440-b8e7-da55a0869ccf"
+    },
+    {
+      "id": "783ca7a7-c637-4cdf-8e92-6916a23e2762",
+      "type": "istar.DependencyLink",
+      "source": "2db32deb-02a4-4f33-91c4-3c1e0a572147",
+      "target": "23fee1e5-01d2-40d6-bcf6-92a792878311"
+    },
+    {
+      "id": "258db964-1fc4-4666-a10c-dd1bb1480c33",
+      "type": "istar.DependencyLink",
+      "source": "23fee1e5-01d2-40d6-bcf6-92a792878311",
+      "target": "7f3c2075-ae76-4491-a9dd-a696eadd131c"
+    },
+    {
+      "id": "def2c3f4-5bb9-4dbd-ad10-21feecc307c1",
+      "type": "istar.DependencyLink",
+      "source": "db26a903-8f15-48f7-9435-c7f46393b5c9",
+      "target": "da1442af-2cd9-4649-a331-ba30aee12d7c"
+    },
+    {
+      "id": "ee79aff9-2584-4db0-9543-646c9d57dab4",
+      "type": "istar.DependencyLink",
+      "source": "da1442af-2cd9-4649-a331-ba30aee12d7c",
+      "target": "a7db6389-d3d7-4e7d-9f8e-25645182719f"
+    },
+    {
+      "id": "56c5d51d-073e-49f0-9169-4c22a0ee3e75",
+      "type": "istar.DependencyLink",
+      "source": "db26a903-8f15-48f7-9435-c7f46393b5c9",
+      "target": "dd3a5341-3879-4457-80ca-46aeea22ee3b"
+    },
+    {
+      "id": "7af0c03d-ef80-4c19-a840-5fec2e5e64b5",
+      "type": "istar.DependencyLink",
+      "source": "dd3a5341-3879-4457-80ca-46aeea22ee3b",
+      "target": "7f3c2075-ae76-4491-a9dd-a696eadd131c"
+    },
+    {
+      "id": "10f65f12-0b1d-4730-a8a8-264d5906a90a",
+      "type": "istar.DependencyLink",
+      "source": "db26a903-8f15-48f7-9435-c7f46393b5c9",
+      "target": "32b6f2d5-7837-450f-b347-73c137780d3b"
+    },
+    {
+      "id": "6828b6a0-a9cb-439b-913d-25477b60553b",
+      "type": "istar.DependencyLink",
+      "source": "32b6f2d5-7837-450f-b347-73c137780d3b",
+      "target": "84c4f7d9-24e0-4440-b8e7-da55a0869ccf"
+    },
+    {
+      "id": "bd5b8bd6-1bdb-4213-8a76-42bc9e9c9461",
+      "type": "istar.OrRefinementLink",
+      "source": "a5a4a871-596a-4858-ade7-18dc0ff765d1",
+      "target": "f1b7b2b1-ad98-4016-a9b8-9cc86403e98d"
+    },
+    {
+      "id": "82c79c71-eb7a-4d11-b5b7-30a04ae2f7d4",
+      "type": "istar.OrRefinementLink",
+      "source": "c2009203-c19d-455f-9b0f-5df10d1b25c7",
+      "target": "c371f15c-bd52-4b0a-9636-2b22fa05d722"
+    },
+    {
+      "id": "8fb050e1-2d1c-41c4-a4ad-443e10257cfb",
+      "type": "istar.OrRefinementLink",
+      "source": "a29dbc50-c7b3-44ef-a8f2-673304a4885c",
+      "target": "52f0313b-c762-44cd-9888-b0435b3c5fa7"
+    },
+    {
+      "id": "7356c2ad-30b5-4634-85a0-c15a2a763a8c",
+      "type": "istar.AndRefinementLink",
+      "source": "96d2e2c4-cc54-46cb-8fca-a6667e21ab02",
+      "target": "329fed73-840d-43ce-9aef-c43c1ec9ff1b"
+    },
+    {
+      "id": "5353ad11-26df-4c79-b1e9-e05b0662c8c4",
+      "type": "istar.AndRefinementLink",
+      "source": "235c6edd-2851-475f-adb5-d577c4f47bd5",
+      "target": "329fed73-840d-43ce-9aef-c43c1ec9ff1b"
+    },
+    {
+      "id": "d1e960ef-9061-4e0c-a1c0-36586571f2ea",
+      "type": "istar.AndRefinementLink",
+      "source": "a024d6f2-9b7d-49a8-8c86-8a03830343e4",
+      "target": "329fed73-840d-43ce-9aef-c43c1ec9ff1b"
+    },
+    {
+      "id": "959cd250-36ba-4021-a3b3-235d229eb2e5",
+      "type": "istar.OrRefinementLink",
+      "source": "2db32deb-02a4-4f33-91c4-3c1e0a572147",
+      "target": "e93e7805-2feb-4372-a020-8b89b999269e"
+    },
+    {
+      "id": "ec44e192-5101-4e7c-ab4c-e08a05a90d7e",
+      "type": "istar.OrRefinementLink",
+      "source": "2db32deb-02a4-4f33-91c4-3c1e0a572147",
+      "target": "a024d6f2-9b7d-49a8-8c86-8a03830343e4"
+    },
+    {
+      "id": "41f1456d-96ca-4b3c-9cef-bdeb7a6a2f68",
+      "type": "istar.OrRefinementLink",
+      "source": "112f8890-a411-41e3-a6f0-f992a5a6e2e0",
+      "target": "e93e7805-2feb-4372-a020-8b89b999269e"
+    },
+    {
+      "id": "27f83e7e-adce-4dca-bd35-aa444c426c81",
+      "type": "istar.OrRefinementLink",
+      "source": "6717a81c-dd72-41c1-b040-2cc2b8d94439",
+      "target": "e93e7805-2feb-4372-a020-8b89b999269e"
+    },
+    {
+      "id": "e75dcdfd-535b-479a-ad08-8130cbceebe1",
+      "type": "istar.OrRefinementLink",
+      "source": "112f8890-a411-41e3-a6f0-f992a5a6e2e0",
+      "target": "235c6edd-2851-475f-adb5-d577c4f47bd5"
+    },
+    {
+      "id": "2e7ecaa7-69fa-4779-9831-1a84c3835e52",
+      "type": "istar.OrRefinementLink",
+      "source": "6717a81c-dd72-41c1-b040-2cc2b8d94439",
+      "target": "96d2e2c4-cc54-46cb-8fca-a6667e21ab02"
+    },
+    {
+      "id": "8b72b521-1cf3-4e95-b94e-eadde0811406",
+      "type": "istar.OrRefinementLink",
+      "source": "329fed73-840d-43ce-9aef-c43c1ec9ff1b",
+      "target": "462bb4dd-37ee-45a0-8fcc-1b1a9e0b3bf3"
+    },
+    {
+      "id": "8c496af3-3085-4b52-80ff-0d47e598139d",
+      "type": "istar.OrRefinementLink",
+      "source": "329fed73-840d-43ce-9aef-c43c1ec9ff1b",
+      "target": "ebea7307-7860-4fb3-9cf6-377186e2fed8"
+    }
+  ],
+  "display": {
+    "6355892a-0a96-4a77-9c00-f07e71c6a97a": {
+      "vertices": [
+        {
+          "x": 771,
+          "y": 303
+        }
+      ]
+    }
+  },
+  "tool": "pistar.1.2.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 24 Sep 2019 21:21:23 GMT",
+  "diagram": {
+    "width": 1700,
+    "height": 1300
+  }
+}

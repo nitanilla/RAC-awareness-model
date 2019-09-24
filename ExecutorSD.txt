@@ -1,0 +1,61 @@
+{
+  "actors": [
+    {
+      "id": "3589ee55-603d-41ee-8bf1-2b2a54498def",
+      "text": "Executor-Raspberry",
+      "type": "istar.Actor",
+      "x": 119,
+      "y": 49,
+      "nodes": []
+    },
+    {
+      "id": "19bd1089-8f9d-4227-8ea5-60835e8c8f90",
+      "text": "Executor-Arduino",
+      "type": "istar.Actor",
+      "x": 401,
+      "y": 32,
+      "nodes": [
+        {
+          "id": "5ada60bb-141f-40a5-9af2-f7d1da88e217",
+          "text": "Functional-Awareness",
+          "type": "istar.Quality",
+          "x": 488,
+          "y": 79
+        },
+        {
+          "id": "ca79c344-60e6-4e39-bf67-4a8972868264",
+          "text": "TimeTemp-Awareness",
+          "type": "istar.Quality",
+          "x": 444,
+          "y": 153
+        }
+      ]
+    },
+    {
+      "id": "66eb0467-3008-4590-9343-c30e09405b20",
+      "text": "Tubes",
+      "type": "istar.Actor",
+      "x": 330,
+      "y": 237,
+      "nodes": []
+    },
+    {
+      "id": "718fed68-b8b8-4ed1-84ba-4b8ead6e61f7",
+      "text": "Pump",
+      "type": "istar.Actor",
+      "x": 73,
+      "y": 223,
+      "nodes": []
+    }
+  ],
+  "dependencies": [],
+  "links": [],
+  "display": {},
+  "tool": "pistar.1.2.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 24 Sep 2019 20:41:30 GMT",
+  "diagram": {
+    "width": 1700,
+    "height": 1300
+  }
+}

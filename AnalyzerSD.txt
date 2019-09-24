@@ -1,0 +1,51 @@
+{
+  "actors": [
+    {
+      "id": "3589ee55-603d-41ee-8bf1-2b2a54498def",
+      "text": "Analyzer-Raspberry",
+      "type": "istar.Actor",
+      "x": 119,
+      "y": 49,
+      "nodes": [
+        {
+          "id": "e8316273-2b8b-4d97-9628-6c3d95912bcc",
+          "text": "TimeTemp-Awareness",
+          "type": "istar.Quality",
+          "x": 200,
+          "y": 85
+        },
+        {
+          "id": "62b12f71-d3aa-49b8-96b2-61954c4a7638",
+          "text": "Goal-Awareness",
+          "type": "istar.Quality",
+          "x": 245,
+          "y": 154
+        },
+        {
+          "id": "abc99dc9-3500-450f-87c1-4b5d943cb2ee",
+          "text": "User-Awareness",
+          "type": "istar.Quality",
+          "x": 131,
+          "y": 161
+        },
+        {
+          "id": "ecd92c8f-f1cd-4592-a7ba-53aea000367f",
+          "text": "SocialRelation-Awareness",
+          "type": "istar.Quality",
+          "x": 197,
+          "y": 232
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [],
+  "display": {},
+  "tool": "pistar.1.2.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 24 Sep 2019 20:35:06 GMT",
+  "diagram": {
+    "width": 1700,
+    "height": 1300
+  }
+}
