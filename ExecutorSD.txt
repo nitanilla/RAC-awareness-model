@@ -4,56 +4,111 @@
       "id": "3589ee55-603d-41ee-8bf1-2b2a54498def",
       "text": "Executor-Raspberry",
       "type": "istar.Actor",
-      "x": 119,
-      "y": 49,
+      "x": 68,
+      "y": 344,
       "nodes": []
     },
     {
       "id": "19bd1089-8f9d-4227-8ea5-60835e8c8f90",
       "text": "Executor-Arduino",
       "type": "istar.Actor",
-      "x": 401,
-      "y": 32,
+      "x": 59,
+      "y": 57,
       "nodes": [
         {
           "id": "5ada60bb-141f-40a5-9af2-f7d1da88e217",
           "text": "Functional-Awareness",
           "type": "istar.Quality",
-          "x": 488,
-          "y": 79
+          "x": 260,
+          "y": 93
         },
         {
           "id": "ca79c344-60e6-4e39-bf67-4a8972868264",
           "text": "TimeTemp-Awareness",
           "type": "istar.Quality",
-          "x": 444,
-          "y": 153
+          "x": 144,
+          "y": 94
+        },
+        {
+          "id": "ada2b1d6-8de8-41a9-8d20-dd20d58f7c8a",
+          "text": "InterruptPump",
+          "type": "istar.Task",
+          "x": 262,
+          "y": 210
+        },
+        {
+          "id": "898d5ae5-a021-4f74-a35a-07c441586b2f",
+          "type": "istar.Task",
+          "x": 155,
+          "y": 183
         }
       ]
-    },
-    {
-      "id": "66eb0467-3008-4590-9343-c30e09405b20",
-      "text": "Tubes",
-      "type": "istar.Actor",
-      "x": 330,
-      "y": 237,
-      "nodes": []
     },
     {
       "id": "718fed68-b8b8-4ed1-84ba-4b8ead6e61f7",
       "text": "Pump",
       "type": "istar.Actor",
-      "x": 73,
-      "y": 223,
+      "x": 669,
+      "y": 162,
       "nodes": []
     }
   ],
-  "dependencies": [],
-  "links": [],
+  "dependencies": [
+    {
+      "id": "d55566fa-93c6-46dd-8cb1-bb4b8e550822",
+      "text": "TurnOn",
+      "type": "istar.Task",
+      "x": 458,
+      "y": 164,
+      "source": "718fed68-b8b8-4ed1-84ba-4b8ead6e61f7",
+      "target": "5ada60bb-141f-40a5-9af2-f7d1da88e217"
+    },
+    {
+      "id": "bc7ae90b-c26a-4194-b170-b1100c44a116",
+      "text": "TurnOff",
+      "type": "istar.Task",
+      "x": 451,
+      "y": 248,
+      "source": "718fed68-b8b8-4ed1-84ba-4b8ead6e61f7",
+      "target": "5ada60bb-141f-40a5-9af2-f7d1da88e217"
+    }
+  ],
+  "links": [
+    {
+      "id": "a2cb6926-d8f6-410c-9e14-caf1927311d2",
+      "type": "istar.DependencyLink",
+      "source": "718fed68-b8b8-4ed1-84ba-4b8ead6e61f7",
+      "target": "d55566fa-93c6-46dd-8cb1-bb4b8e550822"
+    },
+    {
+      "id": "b99f4c0f-f897-4cc0-828b-5baa2c806eff",
+      "type": "istar.DependencyLink",
+      "source": "d55566fa-93c6-46dd-8cb1-bb4b8e550822",
+      "target": "5ada60bb-141f-40a5-9af2-f7d1da88e217"
+    },
+    {
+      "id": "851361e2-bc4a-42fd-964d-3b270ac01849",
+      "type": "istar.DependencyLink",
+      "source": "718fed68-b8b8-4ed1-84ba-4b8ead6e61f7",
+      "target": "bc7ae90b-c26a-4194-b170-b1100c44a116"
+    },
+    {
+      "id": "f11f7ed0-d298-4aca-b2d1-280718a13b3a",
+      "type": "istar.DependencyLink",
+      "source": "bc7ae90b-c26a-4194-b170-b1100c44a116",
+      "target": "5ada60bb-141f-40a5-9af2-f7d1da88e217"
+    },
+    {
+      "id": "5b2d5ebe-7d86-47de-af46-2837d6b9ca83",
+      "type": "istar.OrRefinementLink",
+      "source": "ada2b1d6-8de8-41a9-8d20-dd20d58f7c8a",
+      "target": "5ada60bb-141f-40a5-9af2-f7d1da88e217"
+    }
+  ],
   "display": {},
   "tool": "pistar.1.2.0",
   "istar": "2.0",
-  "saveDate": "Tue, 24 Sep 2019 20:41:30 GMT",
+  "saveDate": "Tue, 01 Oct 2019 21:16:38 GMT",
   "diagram": {
     "width": 1700,
     "height": 1300
